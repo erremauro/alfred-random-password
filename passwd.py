@@ -2,6 +2,8 @@
 import os
 import sys
 import random
+import json
+import uuid
 
 dictionary = [
   "a",
@@ -81,4 +83,24 @@ def generate_password():
   # removes the last unwanted separator
   return password[:-1]
 
-sys.stdout.write(generate_password())
+'''
+Generates a new random password then creates the script filter
+object used by alfred to show the password in the result list
+'''
+new_password = generate_password()
+script_filter_result = json.dumps({
+  "items": [
+    {
+      "uid": str(uuid.uuid4()),
+      "title": new_password,
+      "subtitle":  "Action this item to copy this password to the clipboard",
+      "arg": new_password,
+      "text": {
+        "copy": new_password,
+        "largetype": new_password
+      }
+    }
+  ]
+})
+
+sys.stdout.write(script_filter_result)

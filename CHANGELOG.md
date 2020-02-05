@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+### Changed
+- The generated password is now shown as an alfred result.
+
+### Removed
+- Notifications are removed.
 
 ## [1.0.0] - 2020-02-05
 ### Added
