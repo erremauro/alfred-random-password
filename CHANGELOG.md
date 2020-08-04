@@ -3,7 +3,9 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 ### Changed
-- The generated password is now shown as an alfred result.
+- Update password style to a single uppercase and number
+- The generated password is now shown as an alfred result
+- `max_repeats` default parameter set to 1
 
 ### Removed
 - Notifications are removed.
