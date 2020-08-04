@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+### Added
+### Changed
+### Removed
+
+## [1.1.0] - 2020-08-04
 ### Changed
 - Update password style to a single uppercase and number
 - The generated password is now shown as an alfred result
@@ -15,5 +20,6 @@ All notable changes to this project will be documented in this file.
 - Password generation logic
 - Variables to control how the password is generated
 
-[Unreleased]: https://github.com/erremauro/alfred-random-password/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/erremauro/alfred-random-password/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/erremauro/alfred-random-password/releases/tag/v1.1.0
 [1.0.0]: https://github.com/erremauro/alfred-random-password/releases/tag/v1.0.0
